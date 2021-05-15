@@ -2,7 +2,8 @@
 
 ;;; Single Bernoulli number by Akiyama-Tanigawa algorithm.
 (defun bnum (n)
-  "Compute a single Bernoulli number +Bn with Akiyama-Tanigawa recursion."
+  "Compute a single Bernoulli number +Bn with Akiyama-Tanigawa recursion.
+   Performance is very poor, academic interest only."
   (when (and (/= n 1) (oddp n)) (return-from bnum 0)) ; odd n give 0
   (bnum-triangle n 1))
 
