@@ -1,7 +1,6 @@
 (defsystem bernoulli-num
   :name "bernoulli-num"
   :author "Thomas HOULLIER"
-  :depends-on ("cl-factorial")
   :components
   ((:module "src"
     :components ((:file "package")
